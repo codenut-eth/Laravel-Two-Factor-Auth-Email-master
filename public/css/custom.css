@@ -1,3 +1,9 @@
+.body-background {
+    background-color: #343a40;
+}
+.login-card-background {
+    background-color: #dee2e6;
+}
 .ck-editor__editable,
 textarea {
     min-height: 150px;

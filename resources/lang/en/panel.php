@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'site_title' => 'Two Factor',
+    'site_title' => 'Admin Panel',
 ];

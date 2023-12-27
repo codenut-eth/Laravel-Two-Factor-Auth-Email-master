@@ -38,6 +38,7 @@
         </button>
 
         <ul class="nav navbar-nav ml-auto">
+
             @if(count(config('panel.available_languages', [])) > 1)
                 <li class="nav-item dropdown d-md-down-none">
                     <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -50,7 +51,6 @@
                     </div>
                 </li>
             @endif
-
 
         </ul>
     </header>

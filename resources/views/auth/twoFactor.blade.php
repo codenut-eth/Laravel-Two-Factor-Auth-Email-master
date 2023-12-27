@@ -3,7 +3,7 @@
 <div class="row justify-content-center">
     <div class="col-md-8">
         <div class="card-group">
-            <div class="card p-4">
+            <div class="card p-4 login-card-background">
                 <div class="card-body">
                     @if(session()->has('message'))
                         <p class="alert alert-info">
@@ -12,7 +12,7 @@
                     @endif
                     <form method="POST" action="{{ route('verify.store') }}">
                         {{ csrf_field() }}
-                        <h1>Two Factor Verification</h1>
+                        <h1>{{  trans('global.verification')}}</h1>
                         <p class="text-muted">
                             You have received an email which contains two factor login code.
                             If you haven't received it, press <a href="{{ route('verify.resend') }}">here</a>.

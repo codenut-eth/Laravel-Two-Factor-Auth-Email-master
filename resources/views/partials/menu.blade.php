@@ -10,6 +10,14 @@
                     {{ trans('global.dashboard') }}
                 </a>
             </li>
+            <li class="nav-item">
+                <a href="{{ route("admin.videos.index") }}" class="nav-link {{ request()->is('admin/videos') || request()->is('admin/videos/*') ? 'active' : '' }}">
+                    <i class="fa-fw fas fa-video nav-icon">
+
+                    </i>
+                    {{ trans('global.video') }}
+                </a>
+            </li>
             @can('user_management_access')
                 <li class="nav-item nav-dropdown">
                     <a class="nav-link  nav-dropdown-toggle" href="#">

@@ -3,7 +3,7 @@
 <div class="row justify-content-center">
     <div class="col-md-8">
         <div class="card-group">
-            <div class="card p-4">
+            <div class="card p-4 login-card-background">
                 <div class="card-body">
                     @if(\Session::has('message'))
                         <p class="alert alert-info">
@@ -12,8 +12,9 @@
                     @endif
                     <form method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
-                        <h1>{{ trans('panel.site_title') }}</h1>
-                        <p class="text-muted">{{ trans('global.login') }}</p>
+                        <div class="d-flex justify-content-center">
+                            <h1>{{ trans('global.login') }}</h1>
+                        </div>
 
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">

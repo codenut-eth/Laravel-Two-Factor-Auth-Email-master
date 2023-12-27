@@ -65,4 +65,22 @@ return [
             'deleted_at_helper'        => '',
         ],
     ],
+    'video'           => [
+        'title'          => 'Videos',
+        'title_singular' => 'Video',
+        'fields'         => [
+            'id'                       => 'ID',
+            'id_helper'                => '',
+            'name'                     => 'Title',
+            'name_helper'              => '',
+            'creator'                  => 'Creator',
+            'status'                   => 'Status',
+            'created_at'               => 'Created at',
+            'created_at_helper'        => '',
+            'updated_at'               => 'Updated On',
+            'updated_at_helper'        => '',
+            'deleted_at'               => 'Deleted at',
+            'deleted_at_helper'        => '',
+        ],
+    ],
 ];
